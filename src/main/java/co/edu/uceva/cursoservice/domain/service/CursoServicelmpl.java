@@ -11,11 +11,11 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class CursoServiceImpl implements ICursoService{
+public class CursoServicelmpl implements ICursoService{
 
     ICursoRepository cursoRepository;
 
-    public CursoServiceImpl(ICursoRepository cursoRepository) {this.cursoRepository = cursoRepository;}
+    public CursoServicelmpl(ICursoRepository cursoRepository) {this.cursoRepository = cursoRepository;}
 
     @Override
     @Transactional

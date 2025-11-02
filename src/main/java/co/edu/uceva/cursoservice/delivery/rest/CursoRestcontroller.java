@@ -9,7 +9,7 @@ import co.edu.uceva.cursoservice.domain.exception.ValidationException;
 import co.edu.uceva.cursoservice.domain.model.Curso;
 import co.edu.uceva.cursoservice.domain.service.ICursoService;
 import co.edu.uceva.cursoservice.semestre.SemestreClient;
-import co.edu.uceva.cursoservice.semestre.SemetreDTO;
+import co.edu.uceva.cursoservice.semestre.SemestreDTO;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -145,8 +145,8 @@ public class CursoRestController {
 
 
     public void comprobarSemestre(long idCursoSemestre) {
-        Map<String, List<SemetreDTO>> response = semestreClient.obtenerSemestre();
-        List<SemetreDTO> semestres = response.get("semestres"); // clave correcta
+        Map<String, List<SemestreDTO>> response = semestreClient.obtenerSemestre();
+        List<SemestreDTO> semestres = response.get("semestres"); // clave correcta
 
         boolean existe = semestres.stream()
                 .anyMatch(s -> s.getId() == idCursoSemestre);
