@@ -18,8 +18,6 @@
 | nombre       | String  | No nulo, no vacío, 2–50 caracteres |
 | descripcion  | String  | Máximo 255 caracteres |
 | cupo         | Integer | No nulo, numérico, entre 1 y 500 |
-| semestreId   | Long    | No nulo |
-| docenteId    | Long    | No nulo |
 
 ---
 
