@@ -99,9 +99,7 @@ Campos detectados:
 | Rol                     | Nombre          | Usuario GitHub   | Observaciones |
 |-------------------------|------------------|------------------|---------------|
 | Autor del microservicio | Santiago García | @Santi202305 | Desarrollo de CRUD y clientes REST |
-| Integración externa     | Santiago García | @Santi202305 | Conexión a Semestre y Docente |
-| DevOps                  | —               | —                | Pendiente de Dockerfile |
-
+| DevOps                  | Santiago García | @Santi202305 | Dockerfile implementado |
 ---
 
 Fecha: 2025-11-11
