@@ -2,7 +2,7 @@
 
 * Responsable:  Santiago García (@Santi202305)  
 * Repositorio base (.zip): https://github.com/Santi202305/Curse-Service.git  
-* Docker Hub: (pendiente integración)  
+* Docker Hub: santiago2305/corse_service-app:latest  
 * Base URL (EC2): http://<ip-o-dominio>:8080  
 * Swagger UI: http://<ip-o-dominio>:8080/swagger-ui  
 
@@ -36,39 +36,6 @@ Versión detectada: `/api/v1/cursos`
 
 ---
 
-### Integraciones externas
-
-#### semestre-service  
-Cliente: `SemestreClient.java`
-
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| GET | /semestres/{id} | Obtiene datos del semestre por ID |
-
-Objeto recibido: `SemestreDTO`  
-Campos detectados:  
-- id  
-- nombre  
-- descripcion  
-
----
-
-#### docente-service  
-Cliente: `DocenteClient.java`
-
-| Método | Ruta | Descripción |
-|--------|------|-------------|
-| GET | /docentes/{id} | Obtiene datos del docente por ID |
-
-Objeto recibido: `DocenteDTO`  
-Campos detectados:  
-- id  
-- nombre  
-- apellido  
-- correo  
-
----
-
 ### Tecnologías
 
 * Spring Boot (versión del proyecto en pom.xml)
@@ -78,15 +45,14 @@ Campos detectados:
 * Validaciones básicas por anotaciones  
 * SQL Script (`Curso-Serve.sql`)  
 * Maven  
-* Docker (pendiente integración)  
-* Swagger (pendiente integración)
+* Docker  
+* Swagger 
 
 ---
 
 ### Características
 
 * API REST funcional para gestión de cursos.
-* Integración vía REST con Semestre-Service y Docente-Service.
 * Manejo de excepciones personalizado mediante `GlobalExceptionHandler`.
 * Entidad Curso con atributos validados y mapeados con JPA.
 * Script SQL incluido para carga inicial de datos.
@@ -108,7 +74,6 @@ Fecha: 2025-11-11
 
 * Implementación completa del CRUD de Curso.
 * Manejo de excepciones centralizado.
-* Integración con los microservicios de Semestre y Docente.
 * Organización del proyecto en capas (delivery, domain, infraestructura HTTP).
 
 ---
